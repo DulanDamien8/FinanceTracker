@@ -1,0 +1,30 @@
+@charset "utf-8";
+#confirmedError {
+    background-color: #c11616;
+    border-radius: 25px;
+    border: 1px solid #1b2430;
+    color: white;
+    margin: 20px auto 0 auto;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 80%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#successMsg {
+    background-color: #21590f;
+    border-radius: 25px;
+    border: 1px solid #1b2430;
+    color: white;
+    margin: 20px auto 0 auto;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 80%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}

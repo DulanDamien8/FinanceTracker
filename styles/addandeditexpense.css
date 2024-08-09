@@ -1,0 +1,106 @@
+@charset "utf-8";
+@media print {
+    body {
+        background-color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+        filter: grayscale(100%);
+    }
+    
+    header {
+        display: none;
+    }  
+}
+
+/* Styling of the form, the way it should be displayed in the body of the page */
+.ex-form {
+    background-color: #ffffff;
+    border-radius: 25px;
+    border: 4px solid #1b2430;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 400px;
+    height: fit-content;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Title of the form styling */
+.ex-form h2 {
+    color: #1b2430;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+/* Styling of the divs containing different inputs */
+.ex-name, 
+.ex-category, 
+.ex-account, 
+.ex-amount, 
+.ex-date {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Styling of the input boxes and how they should be displayed inside the form */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* CSS for form fields that turn Green when the correct form of data is entered */
+input[type="text"]:valid,
+input[type="number"]:valid,
+input[type="date"]:valid {
+    border-color: green;
+}
+
+/* CSS for form fields that turn Red when the Incorrect form of data is entered */
+input[type="text"]:focus:invalid,
+input[type="number"]:focus:invalid,
+input[type="date"]:focus:invalid,
+select:focus:invalid {
+    border-color: red;
+}
+
+/* Removes an outline of blue that comes up when the input field is clicked on */
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus {
+    outline: none;
+}
+
+/* Styling of the labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Styling of the "Add" button */
+.add-expense-button {
+    background-color: #1b2430; /* Green */
+    border-radius: 25px;
+    border: 1px solid #1b2430;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Behaviour of the "Add" button on hover */
+.add-expense-button:hover {
+    background-color: #4f6d94;
+}

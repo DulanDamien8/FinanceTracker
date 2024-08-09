@@ -1,0 +1,152 @@
+@charset "utf-8";
+@media print {
+  body {
+      background-color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: black;
+      filter: grayscale(100%);
+  }
+  
+  header {
+      display: none;
+  }  
+}
+
+/* Styling of My Account form */
+.MyAccountMain {
+    background-color: #ffffff;
+    border-radius: 25px;
+    border: 4px solid #1b2430;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 420px;
+    height: 500px;
+    text-align: center;
+  }
+  
+/* Styling of the "My account" header */
+.MyAccountMain h2 {
+    color: #1b2430;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Alignment of "Name", "Email", "Password", "Password Confimartion" labels */
+.UserName, .UserEmail, .UserPassword, .UserPasswordConfirmation {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* Font of "Name", "Email", "Password", "Password Confimartion" labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Border styles for the text fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 370px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* CSS for form fields that turn Green when the correct form of data is entered */
+input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="password"]:valid{
+    border-color: green;
+}
+
+/* CSS for form fields that turn Red when the Incorrect form of data is entered */
+input[type="text"]:focus:invalid,
+input[type="email"]:focus:invalid,
+input[type="password"]:focus:invalid,
+select:focus:invalid {
+    border-color: red;
+}
+
+/* Removes an outline of blue that comes up when the input field is clicked on */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+    outline: none;
+}
+
+/* Main styling of the buttons "Edit", "Save" and "Delete account" */
+.EditBtn, .SaveBtn {
+    background-color: #1b2430; /* Green */
+    border-radius: 25px;
+    border: 1px solid #1b2430;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+/* Positioning of the "Edit" button */
+.EditBtn {
+    position: relative;
+    float: left;
+}
+
+/* Color while hovering */
+.EditBtn:hover {
+    background-color: #4f6d94;
+}
+
+/* Positioning of the "Save" button */
+.SaveBtn {
+    position: relative;
+    float: right;
+}
+
+.SaveBtn:disabled {
+    background-color: lightslategray;
+    border: 1px solid lightslategray;
+}
+
+/* Color while hovering */
+.SaveBtn:hover {
+    background-color: #4f6d94;
+}
+
+.SaveBtn:disabled:hover {
+    background-color: lightslategray;
+    border: 1px solid lightslategray;
+}
+
+/* Styling of the "Delete account" button */
+.DeleteBtn {
+    background-color: #a22222;
+    border-radius: 25px;
+    border: 1px solid #a22222;
+    color: white;
+    padding: 15px 32px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.DeleteBtn:hover {
+    background-color: #be4d4d;
+}
+
+.DeleteBtn:disabled {
+    background-color: lightslategray;
+    border: 1px solid lightslategray;
+}
+
+.DeleteBtn:disabled:hover {
+    background-color: lightslategray;
+    border: 1px solid lightslategray;
+}

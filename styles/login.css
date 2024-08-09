@@ -1,0 +1,114 @@
+@charset "utf-8";
+@media print {
+  body {
+      background-color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: black;
+      filter: grayscale(100%);
+  }
+  
+  header {
+      display: none;
+  }  
+}
+
+
+
+/* Main styling for the Log In box, setting the font, aligning text and items */
+.LoginMain {
+    background-color: #ffffff;
+    border-radius: 25px;
+    border: 4px solid #1b2430;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 400px;
+    height: 350px;
+    text-align: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+/* Styling for the "Sign in" text */
+.LoginMain h2 {
+    color: #1b2430;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Aligning for the LoginMail and Loginpass divisions */
+.LoginMail, .LoginPass {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Settings margins and bold text for "Email" and "Password */
+.LoginMail label, .LoginPass label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Styling for the email and password borders */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* CSS for form fields that turn Green when the correct form of data is entered */
+input[type="email"]:valid,
+input[type="password"]:valid{
+    border-color: green;
+}
+
+/* CSS for form fields that turn Red when the Incorrect form of data is entered */
+input[type="email"]:focus:invalid,
+input[type="password"]:focus:invalid,
+select:focus:invalid {
+    border-color: red;
+}
+
+/* Removes an outline of blue that comes up when the input field is clicked on */
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+    outline: none;
+}
+
+/* Styling of the Sign in button */
+.button1 {
+    background-color: #1b2430;
+    border-radius: 25px;
+    border: 1px solid #1b2430;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Styling of the Sign up button */
+.button2 {
+    background-color: #1b2430;
+    border-radius: 25px;
+    border: 1px solid #1b2430;
+    color: white;
+    padding: 15px 32px;
+    margin-top: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Color of the Sign in and Sign up button changes when you put your mouse on them */
+.button1:hover, .button2:hover {
+    background-color: #4f6d94;
+}

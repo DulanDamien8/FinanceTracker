@@ -1,0 +1,297 @@
+@charset "utf-8";
+@media print {
+  
+    @page {
+        size: landscape;
+    }
+
+    body {
+        background-color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+        filter: grayscale(100%);
+    }
+
+    .download-expense-btn {
+        display: none;
+    }
+
+    .edtb {
+        display: none;
+    }
+
+    .delb {
+        display: none;
+    }
+
+    .ribbon {
+        display: none;
+    }
+
+    header {
+        display: none;
+    }
+
+    .ribbonBtn {
+        display: none;
+    }
+}
+
+/* Main container div for the content of the page */
+.container {
+    background-color: white;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row;
+    height: 92vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Styling for the div containing the left side of the page
+  which displays the list of expenses and individual
+  items */
+.left-side {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    background-color: #ffffff;
+    margin: 10px 10px;
+    flex: 1;
+}
+
+/* Styling of the titles of the columns for the items inside a list */
+.headers {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    font-weight: bold;
+    align-items: center;
+    border-bottom: 2px solid #1b2430;
+    padding: 20px 25px;
+    width: 100%;
+    margin: 10px 20px;
+    height: fit-content;
+}
+
+/* Styling for the name field */
+.nameh {
+	flex: 0 0 20%;
+    height:fit-content;
+}
+
+/* style settings for the amount field */
+.amounth {
+	flex: 0 0 15%;
+    height:fit-content;
+}
+
+/* style settings for the type field */
+.typeh {
+    flex: 0 0 18%;
+    height:fit-content;
+}
+
+/* style settings for the paid field */
+.paidh {
+    flex: 0 0 18%;
+    height:fit-content;
+}
+
+/* style settings for the date field */
+.dateh {
+    flex: 0 0 14%;
+    height:fit-content;
+}
+
+.ribbonBtn {
+    display: none;
+    position: sticky;
+    align-self: flex-start;
+    top: 100px;
+    right: 10px;
+}
+
+.ribBtn {
+    width: 40px;
+    height: fit-content;
+    background-color: #1b2430;
+    border: 2px solid #1b2430;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 4rem;
+    padding: 6px;
+    margin-right: 10px;
+    margin-left: 20px;
+    flex: 0 0 50px;
+}
+
+.ribBtn:hover {
+    background-color: #1c4983;
+}
+
+
+/* Styling of the div containing a scrollable list of expenses */
+.expenses-list {
+    display: block;
+    justify-content: center;
+    background-color: #ffffff;
+    overflow: auto;
+    max-height: 80vh;
+    border: 0 solid #1b2430;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 10px;
+    flex: 1;
+}
+
+/* Next five block describe the styling of a custom scrollbar, which is displayed when the user hovers over the list of expenses */
+.expenses-list:hover {
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(142, 173, 214, 0.3);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(142, 173, 214, 0.3);;
+}
+
+/* Styling of the individual item inside the scrollable list */
+.item {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    overflow: auto;
+    margin: 10px auto;
+    width: 100%;
+    height: fit-content;
+    padding: 20px 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.item::-webkit-scrollbar-thumb {
+    border-radius: 8em;
+}
+
+.item::-webkit-scrollbar-button:end:increment {
+    width: 4%;
+}
+
+.item::-webkit-scrollbar-button:start:increment {
+    width: 4%;
+}
+
+/* Behaviour of the item on hover, which changes its shadow to emphasize that is is currently hovered over */
+.item:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+/* style settings for the edit button */
+.edtb{
+	background-color: #1b2430;
+	color: white;
+	height: fit-content;
+    text-align: center;
+    text-decoration: none;
+	border-radius: 4rem;
+    width: fit-content;
+	padding: 4px;
+    margin-right: 10px;
+    margin-left: 5px;
+    flex: 0 0 50px;
+
+}
+
+.edtb:hover {
+    background-color: #4f6d94;
+}
+
+/* Style settings for the delete button */
+.delb{
+    background-color: #8c0c0c;
+	color: white;
+	height: fit-content;
+    width: fit-content;
+    text-decoration: none;
+    text-align: center;
+	border-radius: 4rem;
+	padding: 4px;
+    flex: 0 0 50px;
+}
+
+.delb:hover {
+    background-color: #c24040;
+}
+
+/* style settings for the name field */
+.name{
+	flex: 0 0 20%;
+    height:fit-content;
+    margin-right: 10px;
+}
+
+/* style settings for the amount field */
+.amount{
+	flex: 0 0 15%;
+    height:fit-content;
+    margin-right: 10px;
+}
+
+/* style settings for the type field */
+.type{
+    flex: 0 0 18%;
+    height:fit-content;
+    margin-right: 10px;
+}
+
+/* style settings for the paid field */
+.paid{
+    flex: 0 0 17%;
+    height:fit-content;
+    margin-right: 10px;
+}
+
+/* style settings for the date field */
+.date{
+    flex: 0 0 14%;
+    height:fit-content;
+    margin-right: 10px;
+}
+
+.download-expense-btn {
+    background-color: #21590f;
+    height: fit-content;
+    width: fit-content;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 4rem;
+    padding: 6px;
+    margin-right: 10px;
+    margin-left: 0;
+    flex: 0 0 50px;
+}
+
+.download-expense-btn:hover {
+    background-color: #5b9d47;
+}

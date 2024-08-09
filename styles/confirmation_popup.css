@@ -1,0 +1,57 @@
+.DeleteUser {
+    background-color: #ffffff;
+    border-radius: 25px;
+    border: 4px solid #1b2430;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 420px;
+    height: fit-content;
+    text-align: center;
+}
+
+.DeleteUser p {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.popup_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.ConfirmBtn {
+    background-color: #a22222;
+    border-radius: 25px;
+    border: 1px solid #a22222;
+    color: white;
+    padding: 15px 32px;
+    flex: 0 0 40%;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.ConfirmBtn:hover {
+    background-color: #be4d4d;
+}
+
+.CancelBtn {
+    background-color: #1b2430;
+    border-radius: 25px;
+    border: 1px solid #1b2430;
+    color: white;
+    padding: 15px 32px;
+    flex: 0 0 40%;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.CancelBtn:hover {
+    background-color: #4f6d94;
+}

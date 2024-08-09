@@ -1,0 +1,69 @@
+@charset "utf-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Main styling of the navigation bar */ 
+.mynav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(135deg, #1b2430, #1c4983);
+    padding: 20px 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 8vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Styling of the iWallet logo on the top left */ 
+.titlelink {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    transition: color 0.3s ease-in-out;
+    transition: font-size 0.3s ease-in-out;
+}
+
+/* Hovering color and font size for the iWallet logo */
+.titlelink:hover {
+    color: #4f6d94;
+    font-size: 1.5rem;
+}
+
+/* Alignment of the navigation bar unordered list */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Alignment of list items (page titles) in the navigation bar */
+.navbar li {
+    list-style: none;
+    margin: 0;
+    padding: 0 15px;
+    position: relative;
+}
+
+/* Text styling of page titles in the navigation bar */
+.navbar li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover color for page titles */
+.navbar li a:hover {
+    color: #4f6d94;
+}
+
+
